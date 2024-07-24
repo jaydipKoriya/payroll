@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Slip</title>
+
+     <!-- Custom fonts for this template-->
+     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+     <link
+         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+         rel="stylesheet">
+     <!-- Custom styles for this template
+     <link href="css/sb-admin-2.min.css" rel="stylesheet"> -->
+ 
+     <!-- Bootstrap CSS (add this line) -->
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Custom styles for this template-->
+     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS (add this line) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <style>
+        /* Add your custom styles here */
+        .salary-slip-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .salary-slip-header {
+            text-align: center;
+        }
+
+        .salary-slip-title {
+            font-size: 24px;
+        }
+
+        .salary-slip-subtitle {
+            font-size: 20px;
+        }
+
+        .salary-slip-details {
+            margin-top: 20px;
+        }
+
+        .salary-details-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .salary-details-table,
+        .salary-details-table th,
+        .salary-details-table td {
+            border: 1px solid #000;
+        }
+
+        .salary-details-table th,
+        .salary-details-table td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        .total-row {
+            font-weight: bold;
+        }
+
+        .net-salary {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="modal" id="salarySlipModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Salary Slip</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="salary-slip-container">
+                        <div class="salary-slip-header">
+                            <h1 class="salary-slip-title">Company Name</h1>
+                            <p>Company Address</p>
+                            <h2 class="salary-slip-subtitle">Salary Slip</h2>
+                        </div>
+                        <div class="salary-slip-details">
+                            <p>Employee ID: XXXX</p>
+                            <p>Employee Name: Aryan Joshi Doe</p>
+                            <p>Designation: Software Engineer</p>
+                            <p>Month: January 2023</p>
+                        </div>
+                        <table class="salary-details-table">
+                            <tr>
+                                <th>Earnings</th>
+                                <th>Amount</th>
+                                <th>Deductions</th>
+                                <th>Amount</th>
+                            </tr>
+                            <tr>
+                                <td>Basic</td>
+                                <td>$1000</td>
+                                <td>Provident Fund</td>
+                                <td>$50</td>
+                            </tr>
+                            <tr>
+                                <td>HRA</td>
+                                <td>$300</td>
+                                <td>Loan</td>
+                                <td>$20</td>
+                            </tr>
+                            <tr>
+                                <td>Conveyance</td>
+                                <td>$50</td>
+                                <td>Professional Tax</td>
+                                <td>$10</td>
+                            </tr>
+                            <tr class="total-row">
+                                <td>Total Earnings</td>
+                                <td>$1350</td>
+                                <td>Total Deductions</td>
+                                <td>$80</td>
+                            </tr>
+                        </table>
+                        <p class="center-text net-salary">Net Salary: $1270</p>
+                        <p class="center-text">Amount in Words: One Thousand Two Hundred Seventy</p>
+                        <p>Cheque No: 12345</p>
+                        <p>Bank Name: ABC Bank</p>
+                        <p>Dated As: 2023-01-31</p>
+                        <div style="display: flex; justify-content: space-between;">
+                            <p>Employee's Signature</p>
+                            <p>Director's Signature</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
